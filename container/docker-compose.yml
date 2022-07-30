@@ -1,0 +1,10 @@
+version: "3.9"
+services:
+  ubuntu:
+    container_name: pdf-pass
+    build:
+      context: .
+      dockerfile: Dockerfile
+    tty: true
+    volumes:
+      - ./app:/app
